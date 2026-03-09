@@ -1,14 +1,6 @@
 Team:
 1. Ajis Saputra Hidaya, Informatika 23
-2.
-3. 
 
-
-
-data admin:
-'name' => 'Admin',
-'email' => 'admin1@gmail.com',
-'password' => Hash::make('SayaAdmin1')
 
 sistem mengunakan:
 laravel 12

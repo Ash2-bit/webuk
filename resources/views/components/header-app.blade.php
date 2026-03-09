@@ -182,16 +182,27 @@
                     </template>
                 </div>
             </template>
-            <hr class="border-green-100">
+ <hr class="border-green-100">
+            
+            {{-- Bagian Profil Mobile --}}
             <div class="flex items-center space-x-3 py-2">
-                {{-- Ganti bagian <img> di menu mobile --}}
                 <img src="{{ Auth::guard('anggota')->user()->foto ? asset('storage/' . Auth::guard('anggota')->user()->foto) : asset('images/default-avatar.png') }}" 
-                class="w-8 h-8 rounded-full border border-green-500 object-cover">
-                 <span class="text-sm font-bold">{{ Auth::guard('anggota')->user()->nama ?? 'Anggota' }}</span>
+                     class="w-8 h-8 rounded-full border border-green-500 object-cover">
+                <span class="text-sm font-bold text-gray-800">{{ Auth::guard('anggota')->user()->nama ?? 'Anggota' }}</span>
             </div>
+
+            {{-- Tombol Pengaturan (Baru Ditambahkan) --}}
+            <a href="{{ route('user.profile.edit') }}" 
+               class="block text-green-700 font-bold hover:text-green-500 transition-colors">
+                Pengaturan
+            </a>
+
+            {{-- Tombol Logout --}}
             <form action="{{ route('logout.user') }}" method="POST">
                 @csrf
-                <button class="text-left w-full text-red-600 font-bold hover:text-red-500">Logout</button>
+                <button type="submit" class="text-left w-full text-red-600 font-bold hover:text-red-500 transition-colors">
+                    Logout
+                </button>
             </form>
         </nav>
     </div>

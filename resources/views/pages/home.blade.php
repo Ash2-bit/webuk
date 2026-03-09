@@ -15,7 +15,7 @@
       <div class="relative group">
         <div class="absolute -inset-4 md:-inset-8 bg-gradient-to-r from-green-300 to-amber-200 rounded-full blur-2xl opacity-30 md:opacity-40 group-hover:opacity-70 transition duration-500 animate-pulse"></div>
         <img src="{{ asset('logouk.png') }}" alt="Logo UKM"
-             class="relative w-90 sm:w-56 md:w-72 lg:w-[30rem] drop-shadow-2xl transition-transform duration-700 group-hover:scale-105 motion-safe:animate-[bounce_3s_infinite_ease-in-out]">
+        class="relative w-48 sm:w-56 md:w-72 lg:w-[30rem] drop-shadow-2xl transition-transform duration-700 group-hover:scale-105">
       </div>
     </div>
 

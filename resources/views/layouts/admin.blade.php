@@ -8,7 +8,7 @@
 
     
     @vite('resources/css/app.css')
-    <title>Document</title>
+    <title>Menu Admin</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
